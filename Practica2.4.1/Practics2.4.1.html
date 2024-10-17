@@ -1,26 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Superhéroe</title>
     <style>
         label {
             display: block;
             margin-top: 10px;
         }
 
-        .form_button{
+        .form_button {
             display: block;
             margin-top: 15px;
             background-color: rgb(79, 60, 96);
             color: white;
             border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        input, select {
+            margin-top: 5px;
+            padding: 5px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <form action="mailto:rodrigo.acosta1@educa.madrid.org" method="post">
-        <label for="futbol">Equipos de futbol</label>
-        <input type="text" id="futbol" name="Equipos de futbol"/>
-        <button></button>
-    </form>
-</body>
 
+    <form>
+        <fieldset>
+            <legend>Personaje</legend>
+
+            <label for="superhero">Superhéroe favorito</label>
+            <select id="superhero" name="superhero">
+                <option value="">elige superhéroe</option>
+                <option value="ironman">Iron Man</option>
+                <option value="hulk">The Hulk</option>
+            </select>
+
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color" value="#0000FF">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Formato: 9999999">
+        </fieldset>
+
+        <button class="form_button" type="submit">Enviar</button>
+    </form>
+
+</body>
 </html>
