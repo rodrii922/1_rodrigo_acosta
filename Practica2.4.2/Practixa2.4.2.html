@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+
+        input[type=submit],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        input[type=submit], button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+
+        button[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+
+        *:required {
+            border-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="mailto:rodrigo.acosta1@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+
+            <label for="superhero">Superhéroe favorito</label>
+            <select id="superhero" name="superhero">
+                <option value="">elige superhéroe</option>
+                <option value="ironman">Iron Man</option>
+                <option value="hulk">Hulk</option>
+            </select>
+
+            <label for="color">Color</label>
+            <input type="color" name="color" value="#8889Fe">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="DatosContacto">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="DatosContacto">Formato: 99999999
+            <label for="email">Email</label>
+            <input type="email" name="DatosContacto">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="DatosContacto">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" >
+        </fieldset>
+        <fieldset>
+            <legend>Seleciona forma de contacto preferido:</legend>
+            <input type="radio" name="contacto" value="email">
+            <label for="Email">Email</label>
+            <input type="radio" name="contacto" value="telefono">
+            <label for="Telefono">Telefono</label>
+            <input type="radio" name="contacto" value="carta">
+            <label for="Carta">Carta</label>
+        </fieldset>
+        <fieldset>
+            <legend>Elige tus asignaturas favoritas</legend>
+            <div>
+            <input type="checkbox" name="asignaturas" value="AplicacionesWeb">
+            <label for="Aplicaciones Web">Aplicaciones Web</label>
+            </div>
+            <div>
+            <input type="checkbox" name="asignaturas" value="SeguridadInformatica">
+            <label for="Seguridad informatica">Seguridad informatica</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha y hora </legend>
+            <input type="datetime-local" name="fechayhora"value=fechayhora>
+        </fieldset>
+        <fieldset>
+            <legend>Añade tu CV</legend>
+            <input type="file">
+        </fieldset>
+        <fieldset>
+            <legend>Cual es tu numero favorito</legend>
+            <input type="number">
+        </fieldset>
+        <fieldset>
+            <legend>Indica cuanto te ha gustado el formulario</legend>
+            <input type="range">
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
