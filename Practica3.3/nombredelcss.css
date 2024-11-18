@@ -127,7 +127,7 @@ body {
   }
   
   .school span, .job-title span {
-    color: #889499;
+    color: #20323a;
     text-decoration: underline;
   }
   
@@ -139,7 +139,7 @@ body {
   
   footer {
    padding: 1em 1.5em;
-   background: #A7B8BF;
+   background: #282929;
    color: white;
    text-align: right;
   }
