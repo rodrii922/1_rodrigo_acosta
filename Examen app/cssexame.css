@@ -1,0 +1,22 @@
+header{
+    background-color:chocolate;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+
+}
+.logo{
+    border-radius: 100%;
+}
+nav{
+    background-color: orangered;
+    transform-box: border-box;
+
+}
+.leonesmarinos{
+    background-color: blue;            
+}
+h2{
+    font-weight: 190000;
+    background-color: chocolate;
+}
